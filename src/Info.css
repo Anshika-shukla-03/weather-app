@@ -1,0 +1,109 @@
+
+.InfoBox {
+    max-width: 400px;
+    background: linear-gradient(145deg, #f6f8ff, #e3e9ff);
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(55, 65, 81, 0.12), 0 10px 10px rgba(55, 65, 81, 0.08);
+    padding: 30px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e293b;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.InfoBox:hover {
+    box-shadow: 0 24px 48px rgba(55, 65, 81, 0.22), 0 18px 18px rgba(55, 65, 81, 0.18);
+}
+
+/* Heading */
+.InfoBox h1 {
+    font-weight: 900;
+    color: #334155;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    letter-spacing: 1.3px;
+    text-shadow: 1px 1px 3px #cbd5e1;
+}
+
+/* Card Container */
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    transition: transform 0.3s ease;
+}
+
+.cardContainer:hover {
+    transform: translateY(-6px);
+}
+
+/* Typography of weather details */
+.InfoBox p {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 12px 0;
+    color: #475569;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+}
+
+.InfoBox p i {
+    color: #6366f1;  /* Indigo-500 */
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.InfoBox p span.value {
+    color: #1e40af; /* Indigo-900 */
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+/* On hover highlight for paragraphs */
+.InfoBox p:hover {
+    color: #4338ca;
+    cursor: default;
+}
+
+/* Separate summary block with border */
+.InfoBox .weather-summary {
+    font-size: 1.3rem;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 3px solid #c7d2fe;
+    color: #1e3a8a;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: capitalize;
+}
+
+/* Styling for CardMedia image */
+.MuiCardMedia-root {
+    border-radius: 20px 20px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.MuiCardMedia-root:hover {
+    transform: scale(1.05);
+    filter: brightness(0.95);
+}
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+    .InfoBox {
+        max-width: 90vw;
+        padding: 22px 18px;
+    }
+
+    .InfoBox h1 {
+        font-size: 1.8rem;
+    }
+
+    .InfoBox p {
+        font-size: 1rem;
+    }
+}
